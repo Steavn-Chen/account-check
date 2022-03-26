@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
 app.get("/login", (req, res) => {
   res.render("login");
 });
+app.get("/login", (req, res) => {
+  console.log(req.body,req.params,req.query)
+  res.render("login");
+});
 
 app.listen(port, () => {
   console.log(`The account-check WEB running on http://localhost:${port}`)
