@@ -1,6 +1,6 @@
 ### Account-Check
 
-![Account-Check-image]()
+![Account-Check-image](https://github.com/Steavn-Chen/Account-Check/blob/main/public/images/%E5%B8%B3%E5%AF%86%E6%AA%A2%E6%9F%A5%E6%A9%9F%E5%88%B6.PNG)
 
 ## 功能介紹
   
