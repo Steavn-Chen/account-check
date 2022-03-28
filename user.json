@@ -23,5 +23,10 @@
     "firstName": "Nick",
     "email": "nick@shield.com",
     "password": "password"
+  },
+  {
+    "firstName": "123",
+    "email": "123@123.com",
+    "password": "123"
   }
 ]
