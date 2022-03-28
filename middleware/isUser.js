@@ -1,4 +1,4 @@
-// 第二次用 session 來驗證的函式
+// 用來驗證 session 的函式
 const auth = (req, res, next) => {
   if (req.session.user) {
     next()
