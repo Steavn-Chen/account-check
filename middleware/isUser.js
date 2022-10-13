@@ -1,9 +1,9 @@
 // 用來驗證 session 的函式
 const auth = (req, res, next) => {
   if (req.session.user) {
-    next()
+    return next()
   } else {
-    console.log('noAuth')
+    return res.redirect('/users/login')
   }
 }
 
