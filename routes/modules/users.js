@@ -11,7 +11,7 @@ router.post('/login', (req, res) => {
   const { email, password } = req.body
   const checkAccount = userList.find((i) => i.email === email)
   if (!checkAccount) {
-    message = '此帳號不存在 !'
+    message = '你的帳號或密碼錯誤 !'
     return res.render('error', { message })
   }
   if (checkAccount.password !== password) {
@@ -20,8 +20,8 @@ router.post('/login', (req, res) => {
   }
 
   // 使用者送出的表單 email password 無誤再把使用者名稱塞進 req.session 裡以便驗證
-  req.session.user = checkAccount.firstName
-  res.render('welcome', { user: checkAccount })
+  req.session.user = checkAccount.email
+  res.render('welcome', { user: checkAccount, sessionCount: req.session.count })
 })
 
 router.get('/logout', (req, res) => {
