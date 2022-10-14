@@ -1,13 +1,13 @@
 ### Account-Check
 
-![Account-Check-image](https://github.com/Steavn-Chen/Account-Check/blob/main/public/images/%E5%B8%B3%E5%AF%86%E6%AA%A2%E6%9F%A5%E6%A9%9F%E5%88%B6.PNG)
+![Account-Check-image](public/images/%E5%B8%B3%E5%AF%86%E6%AA%A2%E6%9F%A5%E6%A9%9F%E5%88%B6.PNG)
 
 ## 功能介紹
   功能(1)
   - 使用者輸入帳號跟密碼，如果輸入的帳號或密碼錯誤，則跳到錯誤畫面並通知使用者帳號或密碼錯誤，若輸入帳號、密碼都正確，則跳到歡迎使用者的頁面。
   
   功能(2)
-  - 如何讓伺服器保存使用者登入的狀態，使用者登入，當 email，password 輸入正確，伺服器在回應時會把當下登入的 user 存在 session 裡，這樣子使用者在瀏覽網頁時因為瀏覽器上的 session 裡的 user 跟伺服器裡的一致，就不用一直重覆登入才能瀏覽網站，而是從登入到登出這段時間伺服器都保持著使用者處於登入的狀態。
+  - 使用者登入後在未登出前，都保持著登入狀態，可以瀏覽 index, welcome 網頁。
   
 ## 啓動方式
   

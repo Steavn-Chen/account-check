@@ -1,9 +1,11 @@
 <div class="container">
+  {{#if sessionCount}}
   {{#is sessionCount 1}}
-  <h1 class="text-warning">This is first Login. </h1>
+  <h1 class="text-warning">First Login.</h1>
   {{else}}
   <h1 class="text-warning">This is {{sessionCount}} Login.</h1>
   {{/is}}
+  {{/if}}
   <h1 class="mt-3">Welcome back, {{user.firstName}} ! </h1>
   <a href="/users/logout">logout</a>
 </div>
